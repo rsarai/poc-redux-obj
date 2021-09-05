@@ -1,9 +1,8 @@
 import { configureStore } from '@reduxjs/toolkit'
-
-const counterReducer = null;
+import auctionerReducer from './slices'
 
 export default configureStore({
   reducer: {
-    counter: counterReducer
+    entities: auctionerReducer
   }
 })
